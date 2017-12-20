@@ -98,7 +98,7 @@ var canvasDots = function() {
   mousePosition.x = window.innerWidth / 2;
   mousePosition.y = window.innerHeight / 2;
 
-  setInterval(createDots, 1000/30); 
+  setInterval(createDots, 1000/30);
 };
 
 window.onload = function() {
