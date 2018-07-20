@@ -31,6 +31,20 @@ canvas{
     font-style: normal;
     color: #00bdbf;
 }
+@media(max-width:800px){
+  .main_menu_link{
+    /* margin-left: 20%; */
+    margin-top: 20%;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border: .05px solid #00bdbf;
+    padding: 30px;
+    font-style: normal;
+    color: #00bdbf;
+    display: block;
+  }
+}
 
  /*.main_link {
     margin: 50% 50% 50% 50%;
