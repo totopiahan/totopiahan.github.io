@@ -7,6 +7,8 @@ canvas{
   top: 0; right: 0; bottom: 0; left: 0;
 }
 
+/*Desktop */
+
 .main_menu {
   margin: 25% 25% 25% 25%;
   /* margin-left: 20%;
@@ -20,6 +22,8 @@ canvas{
   font-style: normal;
   color: #00bdbf;
 }
+
+/* Moobile */
 
 @media(max-width:1000px){
   .main_menu {
@@ -39,6 +43,7 @@ canvas{
 .main_menu_link{
     /*margin-left: 20%;*/
     /*margin-top: 20%;*/
+    margin: 5% 5% 5% 5%;
     position: relative;
     width: 50%;
     height: 50%;
