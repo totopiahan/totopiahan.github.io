@@ -23,21 +23,6 @@ canvas{
     color: #00bdbf;
 }
 
-.main_menu_link{
-    /*margin-left: 20%;*/
-    /*margin-top: 20%;*/
-    margin: 5% 5% 5% 5%;
-    /*position: relative;*/
-    display: inline-block;
-    width: 50px;
-    height: 50%;
-    border: .05px solid #00bdbf;
-    padding: 50px;
-    font-style: normal;
-    color: #00bdbf;
-    text-align: center;
-    font-size:1.2em;
-}
 /* Moobile */
 
 @media(max-width:1000px){
@@ -55,13 +40,29 @@ canvas{
     }
 }
 
+.main_menu_link{
+    /*margin-left: 20%;*/
+    /*margin-top: 20%;*/
+    margin: 5% 5% 5% 5%;
+    /*position: relative;*/
+    display: inline-block;
+    width: 50px;
+    height: 50%;
+    border: .05px solid #00bdbf;
+    padding: 50px;
+    font-style: normal;
+    color: #00bdbf;
+    text-align: center;
+    font-size:1.2em;
+}
+
 
 @media(max-width:1000px){
     .main_menu_link{
         /* margin-left: 20%; */
         /* margin-top: 20%; */
         position: relative;
-        /* width: 50%; */
+         width: 50%;
         height: 50%;
         border: .05px solid #00bdbf;
         padding: 120px;
@@ -72,13 +73,3 @@ canvas{
         font-size: 3em;
     }
 }
-
-/*.main_link {
-   margin: 50% 50% 50% 50%;
-   position: relative;
-   width: 60%;
-   height: 50%;
-   border: 1px solid #848689;
-   padding: 30px;
-   font-style: normal;
-}*/
