@@ -1,51 +1,35 @@
 html, body {
-  background: #333;
+    background: #333;
 }
 canvas{
-  position: fixed;
-  width: 100%; height: 100%;
-  top: 0; right: 0; bottom: 0; left: 0;
+    position: fixed;
+    width: 100%; height: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
 }
 
 /*Desktop */
 
 .main_menu {
-  margin: 25% 25% 25% 25%;
-  /* margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 20%; */
-  position: relative;
-  /* width: 50%; */
-  /* height: 50%; */
-  border: none;
-  /* padding: 30px; */
-  font-style: normal;
-  color: #00bdbf;
-}
-
-/* Moobile */
-
-@media(max-width:1000px){
-  .main_menu {
-    /*margin: 50% 50% 50% 50%;*/
-    margin-left: 20%;
-    margin-top: 20%;
-    position: relative;
+    margin: 25% 25% 25% 25%;
+    /* margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%; */
+    /*position: relative;*/
     width: 50%;
     height: 50%;
     border: none;
-    padding: 30px;
+    /* padding: 30px; */
     font-style: normal;
     color: #00bdbf;
-  }
 }
 
 .main_menu_link{
     /*margin-left: 20%;*/
     /*margin-top: 20%;*/
     margin: 5% 5% 5% 5%;
-    position: relative;
-    width: 50%;
+    /*position: relative;*/
+    display: inline-block;
+    width: 50px;
     height: 50%;
     border: .05px solid #00bdbf;
     padding: 50px;
@@ -54,30 +38,47 @@ canvas{
     text-align: center;
     font-size:1.2em;
 }
+/* Moobile */
 
 @media(max-width:1000px){
-  .main_menu_link{
-    /* margin-left: 20%; */
-    /* margin-top: 20%; */
-    position: relative;
-    /* width: 50%; */
-    height: 50%;
-    border: .05px solid #00bdbf;
-    padding: 120px;
-    font-style: normal;
-    color: #00bdbf;
-    display: block;
-    text-align: center;
-    font-size: 3em;
-  }
+    .main_menu {
+        /*margin: 50% 50% 50% 50%;*/
+        margin-left: 20%;
+        margin-top: 20%;
+        position: relative;
+        width: 50%;
+        height: 50%;
+        border: none;
+        padding: 30px;
+        font-style: normal;
+        color: #00bdbf;
+    }
 }
 
- /*.main_link {
-    margin: 50% 50% 50% 50%;
-    position: relative;
-    width: 60%;
-    height: 50%;
-    border: 1px solid #848689;
-    padding: 30px;
-    font-style: normal;
+
+@media(max-width:1000px){
+    .main_menu_link{
+        /* margin-left: 20%; */
+        /* margin-top: 20%; */
+        position: relative;
+        /* width: 50%; */
+        height: 50%;
+        border: .05px solid #00bdbf;
+        padding: 120px;
+        font-style: normal;
+        color: #00bdbf;
+        display: block;
+        text-align: center;
+        font-size: 3em;
+    }
+}
+
+/*.main_link {
+   margin: 50% 50% 50% 50%;
+   position: relative;
+   width: 60%;
+   height: 50%;
+   border: 1px solid #848689;
+   padding: 30px;
+   font-style: normal;
 }*/
