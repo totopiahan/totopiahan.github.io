@@ -7,7 +7,7 @@ var canvasDots = function() {
   canvas.height = window.innerHeight;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
-  ctx.lineWidth = .1;
+  ctx.lineWidth = .5;
   ctx.strokeStyle = color;
 
   var mousePosition = {
@@ -93,7 +93,7 @@ var canvasDots = function() {
   window.onmousemove = function(parameter) {
     mousePosition.x = parameter.pageX;
     mousePosition.y = parameter.pageY;
-  }
+  };
 
   mousePosition.x = window.innerWidth / 2;
   mousePosition.y = window.innerHeight / 2;

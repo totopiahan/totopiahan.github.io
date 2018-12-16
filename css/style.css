@@ -8,27 +8,16 @@ canvas{
 }
 
 /*Desktop */
-
 .main_menu {
-    margin: 20% 25% 25% 25%;
-    /* margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20%; */
-    position: relative;
-    width: 50%;
-    height: 50%;
+    margin: 20% 20% 20% 20%;
     border: none;
-    /* padding: 30px; */
-    font-style: normal;
-    color: #00bdbf;
 }
 
 /* Moobile */
-
 @media(max-width:1000px){
     .main_menu {
         /*margin: 50% 50% 50% 50%;*/
-        margin-left: 20%;
+        margin-left: 25%;
         margin-top: 20%;
         position: relative;
         width: 50%;
@@ -41,57 +30,138 @@ canvas{
 }
 
 .main_menu_link{
-    /*margin-left: 20%;*/
-    /*margin-top: 20%;*/
-    margin: 5% 5% 5% 5%;
-    /*position: relative;*/
-    display: inline-block;
-    width: 50px;
-    height: 50%;
-    border: .05px solid #00bdbf;
-    padding: 50px;
+    padding: 80px 0;
+    margin: auto;
+    width:100%;
     font-style: normal;
     color: #00bdbf;
     text-align: center;
-    font-size:1.2em;
-    border-radius:50%;
-    animation: ani 10s infinite;
+    font-size:2em;
+    position: absolute;
 }
 
-@keyframes ani {
-    from {
-        transform: rotate(0);
-        box-shadow:
-                0 0 0 0 #00bdbf
-                /*0 0 0 0 #00bdbf*/
-                /*inset 0 0 0 0px #00bdbf,*/
-                /*inset 0 0 0 0px #00bdbf;*/
-    }
-    to {
-        transform: rotate(360deg);
-        box-shadow:
-                0 0 0 5px #00bdbf
-                /*0 0 0 20px #00bdbf*/
-                /*inset 0 0 0 10px #00bdbf,*/
-                /*inset 0 0 0 20px #00bdbf;*/
-    }
-}
-
-@media(max-width:1000px){
-    .main_menu_link{
-        /* margin-left: 20%; */
-        /* margin-top: 20%; */
-        position: relative;
-         width: 50%;
-        height: 50%;
-        border: .05px solid #00bdbf;
-        padding: 120px;
+@media(max-width:1000px) {
+    .main_menu_link {
+        padding: 130px 0;
+        margin: auto;
+        width: 100%;
         font-style: normal;
         color: #00bdbf;
-        display: block;
         text-align: center;
         font-size: 3em;
+        position: absolute;
+    }
+}
+
+.planet{
+    width:200px;
+    height:200px;
+    /*position:absolute;*/
+    position: relative;
+    display: inline-block;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+    /*left:50%;*/
+    top:50%;
+    /*margin:-150px;*/
+    margin:50px;
+}
+.planet .mask{
+    width:100%;
+    height:100%;
+    position: absolute;
+    box-shadow:inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+    border-radius:50%;
+}
+.planet .background{
+    animation: translateBackground 40s infinite linear;
+    background:url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x;
+    width:200px;
+    height:200px;
+    position:absolute;
+    border-radius:50%;
+}
+.planet .clouds{
+    background:url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+    width:200px;
+    height:200px;
+    position:absolute;
+    border-radius:50%;
+    animation: translateBackground 30s infinite linear;
+    opacity: 0.4;
+}
+.planet .wrap{
+    width:200px;
+    height:200px;
+    position:absolute;
+    border-radius:50%;
+    animation: rotatePlanet 150s infinite linear;
+}
+
+
+@media(max-width:1000px) {
+    .planet{
+        width:300px;
+        height:300px;
+        /*position:absolute;*/
+        position: relative;
+        display: inline-block;
         border-radius:50%;
-        animation: ani 10s infinite;
+        overflow:hidden;
+        box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+        /*left:50%;*/
+        top:50%;
+        /*margin:-150px;*/
+        margin:50px;
+    }
+    .planet .mask{
+        width:100%;
+        height:100%;
+        position: absolute;
+        box-shadow:inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+        border-radius:50%;
+    }
+    .planet .background{
+        animation: translateBackground 40s infinite linear;
+        background:url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x;
+        width:300px;
+        height:300px;
+        position:absolute;
+        border-radius:50%;
+    }
+    .planet .clouds{
+        background:url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+        width:300px;
+        height:300px;
+        position:absolute;
+        border-radius:50%;
+        animation: translateBackground 30s infinite linear;
+        opacity: 0.4;
+    }
+    .planet .wrap{
+        width:300px;
+        height:300px;
+        position:absolute;
+        border-radius:50%;
+        animation: rotatePlanet 150s infinite linear;
+    }
+}
+
+
+@keyframes translateBackground{
+    0%{
+        background-position-x:0;
+    }
+    100%{
+        background-position-x:-600px;
+    }
+}
+@keyframes rotatePlanet{
+    0%{
+        transform:rotateZ(0);
+    }
+    100%{
+        transform:rotateZ(-360deg);
     }
 }
