@@ -54,8 +54,28 @@ canvas{
     color: #00bdbf;
     text-align: center;
     font-size:1.2em;
+    border-radius:50%;
+    animation: ani 10s infinite;
 }
 
+@keyframes ani {
+    from {
+        transform: rotate(0);
+        box-shadow:
+                0 0 0 0 #00bdbf
+                /*0 0 0 0 #00bdbf*/
+                /*inset 0 0 0 0px #00bdbf,*/
+                /*inset 0 0 0 0px #00bdbf;*/
+    }
+    to {
+        transform: rotate(360deg);
+        box-shadow:
+                0 0 0 5px #00bdbf
+                /*0 0 0 20px #00bdbf*/
+                /*inset 0 0 0 10px #00bdbf,*/
+                /*inset 0 0 0 20px #00bdbf;*/
+    }
+}
 
 @media(max-width:1000px){
     .main_menu_link{
@@ -71,5 +91,7 @@ canvas{
         display: block;
         text-align: center;
         font-size: 3em;
+        border-radius:50%;
+        animation: ani 10s infinite;
     }
 }
