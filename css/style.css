@@ -7,30 +7,12 @@ canvas{
     top: 0; right: 0; bottom: 0; left: 0;
 }
 
-/*Desktop */
+/* desktop */
 .main_menu {
     margin: 15% 15%;
     border: none;
     position: relative;
     text-align:center;
-}
-
-/* Moobile */
-@media(max-width:1000px){
-    .main_menu {
-        /*margin: 50% 50% 50% 50%;*/
-        margin-left: 25%;
-        margin-top: 20%;
-        position: relative;
-        width: 50%;
-        height: 50%;
-        border: none;
-        padding: 30px;
-        font-style: normal;
-        color: #00bdbf;
-    /* display: flex; */
-
-    }
 }
 
 .main_menu_link{
@@ -59,19 +41,20 @@ a:hover {
 
 }
 
-@media(max-width:1000px) {
+/* mobile */
+@media(max-width:1024px) {
     .main_menu_link {
         display: flex;
     }
     
     a {
-        padding: 118px 0;
+        padding: 150px 0;
         margin: auto;
         width: 100%;
         font-style: normal;
         color: #333;     
         text-align: center;
-        font-size: 4em;
+        font-size: 5em;
         position: absolute;
         text-decoration: none;
     }
@@ -124,10 +107,10 @@ a:hover {
 }
 
 
-@media(max-width:1000px) {
+@media(max-width:1024px) {
     .planet{
-        width:300px;
-        height:300px;
+        width:400px;
+        height:400px;
         /*position:absolute;*/
         position: relative;
         display: inline-block;
@@ -149,23 +132,31 @@ a:hover {
     .planet .background{
         animation: translateBackground 40s infinite linear;
         background:url(../img/mars.jpg) repeat-x;
-        width:300px;
-        height:300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width:400px;
+        height:400px;
         position:absolute;
         border-radius:50%;
     }
     .planet .clouds{
         background:url(../img/clouds.png) repeat-x;
-        width:300px;
-        height:300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width:400px;
+        height:400px;
         position:absolute;
         border-radius:50%;
         animation: translateBackground 30s infinite linear;
         opacity: 0.4;
     }
     .planet .wrap{
-        width:300px;
-        height:300px;
+        width:400px;
+        height:400px;
         position:absolute;
         border-radius:50%;
         animation: rotatePlanet 150s infinite linear;
