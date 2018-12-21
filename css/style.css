@@ -44,7 +44,7 @@ a:hover {
 /* mobile */
 @media(max-width:1024px) {
     .main_menu {
-        margin: 3% 15%;
+        margin: 1% 15%;
     }
 
     .main_menu_link {
