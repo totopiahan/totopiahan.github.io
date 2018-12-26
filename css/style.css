@@ -8,8 +8,16 @@ canvas{
 }
 
 /* desktop */
+.title {
+    position: relative;
+    /*display: flex;*/
+    text-align:center;
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+}
+
 .main_menu {
-    margin: 15% 15%;
+    margin: 10% 15%;
     border: none;
     position: relative;
     text-align:center;
@@ -110,7 +118,7 @@ a:hover {
     animation: rotatePlanet 150s infinite linear;
 }
 
-
+/* mobile */
 @media(max-width:1024px) {
     .planet{
         width:400px;
